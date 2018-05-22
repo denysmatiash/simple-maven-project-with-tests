@@ -6,7 +6,7 @@ node ('master') {
     }
   }
   stage ('Result') {
-    junit '**/target/surefile-reports/TEST-*.xml'
+    junit '**/target/surefire-reports/TEST-*.xml'
     archive 'target/*.jar'
   }
 }  
